@@ -1,0 +1,15 @@
+{
+  "relationships": [],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "type",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20161106150551",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "entityTableName": "menu_type"
+}

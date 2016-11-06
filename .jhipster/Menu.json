@@ -1,0 +1,90 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipType": "many-to-one",
+      "relationshipName": "type",
+      "otherEntityName": "menuType",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "menu",
+      "otherEntityName": "menu",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipType": "one-to-many",
+      "relationshipName": "submenu",
+      "otherEntityName": "menu",
+      "otherEntityRelationshipName": "menu"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "access",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "alias",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "home",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "img",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "level",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "link",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "params",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 8,
+      "fieldName": "path",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 9,
+      "fieldName": "published",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 10,
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldId": 11,
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20161106150550",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "entityTableName": "menu"
+}

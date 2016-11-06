@@ -37,5 +37,17 @@
            timeToLiveSeconds="3600">
     </cache>
     
+    <cache name="com.application.cms.domain.MenuType"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.application.cms.domain.Menu"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="com.application.cms.domain.Menu.submenus"
+        timeToLiveSeconds="3600">
+    </cache>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </ehcache>
