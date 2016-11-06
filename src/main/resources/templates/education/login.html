@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html  layout:decorator="education/layoutHome">
+    <body>
+
+		<div layout:fragment="content">
+			<div  class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						<div class="login-register-form">
+							<form method="post" id="form_login" th:action="@{/login}" th:object="${userDto}">
+								<div class="row">
+									<div class="col-md-6 col-sm-6 login_social">
+										<a href="#" class="btn btn-facebook btn-block"><i class="fa fa-facebook"></i> Facebook</a>
+									</div>
+									<div class="col-md-6 col-sm-6 login_social">
+										<a href="#" class="btn btn-twitter btn-block "><i class="fa fa-twitter"></i>Twitter</a>
+									</div>
+								</div>
+								<div class="login-or"><hr class="hr-or"><span class="span-or">or</span></div>
+								<div class="form-group">
+									<input type="email"  class=" form-control " placeholder="Username" th:field="*{login}">
+									<span class="input-icon"><i class=" fa fa-user"></i></span>
+								</div>
+								<div class="form-group">
+									<input type="password" class=" form-control " placeholder="Password" th:field="${password}" >
+									<span class="input-icon"><i class=" fa fa-lock"></i></span>
+								</div>
+								<div class="form-group text-right">
+									<a href="#">Forget Password?</a>
+								</div>
+								<button type="button" class="btn btn-lg btn-block btn-skin" onclick="document.getElementById('form_login').submit();return false;" >Login</button>
+							  
+							</form>
+							<a href="/register" th:href="@{/register}" class="btn btn-lg btn-link btn-block">Create Account!</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="space70"></div>
+		</div>
+
+    </body>
+</html>
